@@ -1,3 +1,7 @@
+table.attributes tr {
+    height: 42px;
+}
+
 #dicelist {
     position: relative;
 }

@@ -2,24 +2,21 @@
   <a href="./#/characters"><- Back to characters list</a>
   <div class="main-content">
     <div class="character-derived-attributes">
-      Charisma: {{character.attributes.charisma}}<br />
-      Pace: {{character.attributes.pace}}<br />
-      Parry: {{character.attributes.parry}}<br />
-      Toughness: {{character.attributes.toughness}}<br />
-    </div>
-    <div class="character-attributes-test">
-      Agility: <ul id="dicelist"><li id="dice"></li><li id={{character.attributes.agility}}></li></ul><br />
-      Smarts: <ul id="dicelist"><li id="dice"></li><li id={{character.attributes.smarts}}></li></ul><br />
-      Spirit: <ul id="dicelist"><li id="dice"></li><li id={{character.attributes.spirit}}></li></ul><br />
-      Strength: <ul id="dicelist"><li id="dice"></li><li id={{character.attributes.strength}}></li></ul><br />
-      Vigor: <ul id="dicelist"><li id="dice"></li><li id={{character.attributes.vigor}}></li></ul><br />
+      <table>
+      <tr><td>Charisma:</td><td>{{character.attributes.charisma}}</td></tr>
+      <tr><td>Pace:</td><td>{{character.attributes.pace}}</td></tr>
+      <tr><td>Parry:</td><td>{{character.attributes.parry}}</td></tr>
+      <tr><td>Toughness:</td><td>{{character.attributes.toughness}}</td></tr>
+      </table>
     </div>
     <div class="character-attributes">
-      Agility: <img id={{character.attributes.agility}} src="img/img_trans.gif"><br />
-      Smarts: <img id={{character.attributes.smarts}} src="img/img_trans.gif"><br />
-      Spirit: <img id={{character.attributes.spirit}} src="img/img_trans.gif"><br />
-      Strength: <img id={{character.attributes.strength}} src="img/img_trans.gif"><br />
-      Vigor: <img id={{character.attributes.vigor}} src="img/img_trans.gif"><br />
+      <table class="attributes">
+        <tr><td>Agility:</td><td><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.agility}}></li></ul></td></tr>
+        <tr><td>Smarts:</td><td><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.smarts}}></li></ul></td></tr>
+        <tr><td>Spirit:</td><td><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.spirit}}></li></ul></td></tr>
+        <tr><td>Strength:</td><td><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.strength}}></li></ul></td></tr>
+        <tr><td>Vigor:</td><td><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.vigor}}></li></ul></td></tr>
+      </table>
     </div>
     <div class="character-info">
       Name: {{character.name}}<br />
