@@ -1,0 +1,49 @@
+<section id="main">
+  <a href="./#/characters"><- Back to characters list</a>
+  <div class="main-content">
+    <div class="character-derived-attributes">
+      Charisma: {{character.attributes.charisma}}<br />
+      Pace: {{character.attributes.pace}}<br />
+      Parry: {{character.attributes.parry}}<br />
+      Toughness: {{character.attributes.toughness}}<br />
+    </div>
+    <div class="character-attributes-test">
+      Agility: <ul id="dicelist"><li id="dice"></li><li id={{character.attributes.agility}}></li></ul><br />
+      Smarts: <ul id="dicelist"><li id="dice"></li><li id={{character.attributes.smarts}}></li></ul><br />
+      Spirit: <ul id="dicelist"><li id="dice"></li><li id={{character.attributes.spirit}}></li></ul><br />
+      Strength: <ul id="dicelist"><li id="dice"></li><li id={{character.attributes.strength}}></li></ul><br />
+      Vigor: <ul id="dicelist"><li id="dice"></li><li id={{character.attributes.vigor}}></li></ul><br />
+    </div>
+    <div class="character-attributes">
+      Agility: <img id={{character.attributes.agility}} src="img/img_trans.gif"><br />
+      Smarts: <img id={{character.attributes.smarts}} src="img/img_trans.gif"><br />
+      Spirit: <img id={{character.attributes.spirit}} src="img/img_trans.gif"><br />
+      Strength: <img id={{character.attributes.strength}} src="img/img_trans.gif"><br />
+      Vigor: <img id={{character.attributes.vigor}} src="img/img_trans.gif"><br />
+    </div>
+    <div class="character-info">
+      Name: {{character.name}}<br />
+      Profession: {{character.profession}}<br/>
+      Setting: {{character.setting}}<br/>
+      Quote: {{character.quote}}<br/>
+    </div>
+    <table class="result-table">
+      <thead>
+        <tr><th colspan="5">Savage Worlds Character</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Round</td> <td>Grand Prix</td> <td>Team</td> <td>Grid</td> <td>Race</td>
+        </tr>
+        <tr ng-repeat="race in races">
+          <td>{{race.round}}</td>
+          <td>{{race.raceName}}</td>
+          <td>{{race.Results[0].Constructor.name}}</td>
+          <td>{{race.Results[0].grid}}</td>
+          <td>{{race.Results[0].position}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>

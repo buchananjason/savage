@@ -1,0 +1,90 @@
+#dicelist {
+    position: relative;
+}
+
+#dicelist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    display: block;
+}
+
+#dice {
+    left: 0;
+    width: 204px;
+    height: 40px;
+    background: url('../img/dice_sprites.gif') 0 -41px;
+}
+
+#d4 {
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url('../img/dice_sprites.gif') 0 0;
+}
+
+#d4:hover {
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url('../img/dice_sprites.gif') 0 -82px;
+}
+
+#d6 {
+    left: 41px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/dice_sprites.gif') -41px 0;
+}
+
+#d6:hover {
+    left: 41px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/dice_sprites.gif') -41px -82px;
+}
+
+#d8 {
+    left: 82px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/dice_sprites.gif') -82px 0;
+}
+
+#d8:hover {
+    left: 82px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/dice_sprites.gif') -82px -82px;
+}
+
+#d10 {
+    left: 123px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/dice_sprites.gif') -123px 0;
+}
+
+#d10:hover {
+    left: 123px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/dice_sprites.gif') -123px -82px;
+}
+
+#d12 {
+    left: 164px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/dice_sprites.gif') -164px 0;
+}
+
+#d12:hover {
+    left: 164px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/dice_sprites.gif') -164px -82px;
+}
