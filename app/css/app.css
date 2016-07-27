@@ -2,6 +2,10 @@ table {
     border: 1px solid black;
 }
 
+div.main-content {
+    background: url('../img/sheet.gif');
+}
+
 table.derived-attributes {
     text-align: center;
 }
@@ -124,3 +128,15 @@ table.character tbody td.pencil {
     font-family: cursive;
 }
 
+div.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+p.disclaimer {
+    width: 60%;
+    margin: auto;
+    font-size: .8em;
+    font-style: italic;
+    text-align: center;
+}
