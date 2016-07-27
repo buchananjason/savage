@@ -20,6 +20,11 @@ table.derived-attributes tbody td {
     font-family: cursive;
 }
 
+table.attributes th {
+    font-size: 2em;
+    text-align: left;
+}
+
 table.attributes td {
     font-size: 1.3em;
     font-weight: bold;
