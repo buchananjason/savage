@@ -1,5 +1,13 @@
+table {
+    border: 1px solid #999;
+}
+
 table.attributes tr {
-    height: 42px;
+    height: 62px;
+}
+
+table.attributes td img {
+  vertical-align: top;
 }
 
 #dicelist {
