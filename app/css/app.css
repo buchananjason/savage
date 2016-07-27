@@ -2,11 +2,7 @@ table {
     border: 1px solid #999;
 }
 
-table.attributes tr {
-    height: 62px;
-}
-
-table.attributes td img {
+table.attributes td li {
   vertical-align: top;
 }
 
@@ -19,9 +15,13 @@ table.attributes td img {
     padding: 0;
     list-style: none;
     position: absolute;
-    top: 0;
-    height: 40px;
-    display: block;
+    top: -30px;
+    height: 42px;
+}
+
+td.dicecell {
+    height: 42px;
+    width: 206px;
 }
 
 #dice {
