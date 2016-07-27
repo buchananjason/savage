@@ -3,19 +3,31 @@
   <div class="main-content">
     <div class="character-derived-attributes">
       <table class="derived-attributes">
-      <tr><td>Charisma:</td><td>{{character.attributes.charisma}}</td></tr>
-      <tr><td>Pace:</td><td>{{character.attributes.pace}}</td></tr>
-      <tr><td>Parry:</td><td>{{character.attributes.parry}}</td></tr>
-      <tr><td>Toughness:</td><td>{{character.attributes.toughness}}</td></tr>
+        <tbody>
+          <tr>
+            <td>{{character.attributes.charisma}}</td>
+            <td>{{character.attributes.pace}}</td>
+            <td>{{character.attributes.parry}}</td>
+            <td>{{character.attributes.toughness}}</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Charisma</td>
+            <td>Pace</td>
+            <td>Parry</td>
+            <td>Toughness</td>
+          </tr>
+        </tfoot>
       </table>
     </div>
     <div class="character-attributes">
       <table class="attributes">
-        <tr><td>Agility:</td><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.agility}}></li></ul></td></tr>
-        <tr><td>Smarts:</td><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.smarts}}></li></ul></td></tr>
-        <tr><td>Spirit:</td><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.spirit}}></li></ul></td></tr>
-        <tr><td>Strength:</td><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.strength}}></li></ul></td></tr>
-        <tr><td>Vigor:</td><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.vigor}}></li></ul></td></tr>
+        <tr><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.agility}}></li></ul></td><td>Agility</td></tr>
+        <tr><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.smarts}}></li></ul></td><td>Smarts</td></tr>
+        <tr><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.spirit}}></li></ul></td><td>Spirit</td></tr>
+        <tr><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.strength}}></li></ul></td><td>Strength</td></tr>
+        <tr><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.vigor}}></li></ul></td><td>Vigor</td></tr>
       </table>
     </div>
     <div class="character-info">

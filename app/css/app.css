@@ -1,5 +1,24 @@
 table {
-    border: 1px solid #999;
+    border: 1px solid black;
+}
+
+table.derived-attributes {
+    text-align: center;
+}
+
+table.derived-attributes td {
+    width: 25%;
+}
+
+table.derived-attributes tbody td {
+    border: 1px solid black;
+    border-radius: 12px;
+    font-family: cursive;
+}
+
+table.attributes td {
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 table.attributes td li {
