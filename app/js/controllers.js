@@ -77,7 +77,7 @@ angular.module('SavageWorldsCharacterSheetApp.controllers', []).
           skills:
             [
               {
-                name: "fighting",
+                name: "Fighting",
                 rank: "d8"
               },
               {
@@ -89,7 +89,7 @@ angular.module('SavageWorldsCharacterSheetApp.controllers', []).
             [
               {
                 name: "Quirk",
-                severity: "minor" 
+                severity: "Minor" 
               }
             ],
           edges:

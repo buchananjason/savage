@@ -24,45 +24,124 @@
     <div class="logo">
       <img src="img/SW_Fan_Small1.gif">
     </div>
+    <div class="character-info">
+      <table class="character">
+        <tr>
+          <td>Name:</td>
+          <td class="pencil">{{character.name}}</td>
+        </tr>
+        <tr>
+          <td>Profession:</td>
+          <td class="pencil">{{character.profession}}</td>
+        </tr>
+        <tr>
+          <td>Setting:</td>
+          <td class="pencil">{{character.setting}}</td>
+        </tr>
+        <tr>
+          <td>Quote:</td>
+          <td class="pencil">{{character.quote}}</td>
+        </tr>
+      </table>
+    </div>
     <div class="character-attributes">
       <table class="attributes">
         <thead>
           <th colspan="2">Attributes</th>
         </thead>
         <tbody>
-          <tr><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.agility}}></li></ul></td><td>Agility</td></tr>
-          <tr><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.smarts}}></li></ul></td><td>Smarts</td></tr>
-          <tr><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.spirit}}></li></ul></td><td>Spirit</td></tr>
-          <tr><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.strength}}></li></ul></td><td>Strength</td></tr>
-          <tr><td class="dicecell"><ul id="dicelist"><li id="dice"></li><li id={{character.attributes.vigor}}></li></ul></td><td>Vigor</td></tr>
+          <tr>
+            <td class="dicecell">
+              <ul id="dicelist">
+                <li id="dice"></li>
+                <li id={{character.attributes.agility.substring(0,2)}}></li>
+              </ul>
+            </td>
+            <td>Agility</td>
+          </tr>
+          <tr>
+            <td class="dicecell">
+              <ul id="dicelist">
+                <li id="dice"></li>
+                <li id={{character.attributes.smarts.substring(0,2)}}></li>
+              </ul>
+            </td>
+            <td>Smarts</td>
+          </tr>
+          <tr>
+            <td class="dicecell">
+              <ul id="dicelist">
+                <li id="dice"></li>
+                <li id={{character.attributes.spirit.substring(0,2)}}></li>
+              </ul>
+            </td>
+            <td>Spirit</td>
+          </tr>
+          <tr>
+            <td class="dicecell">
+              <ul id="dicelist">
+                <li id="dice"></li>
+                <li id={{character.attributes.strength.substring(0,2)}}></li>
+              </ul>
+            </td>
+            <td>Strength</td>
+          </tr>
+          <tr>
+            <td class="dicecell">
+              <ul id="dicelist">
+                <li id="dice"></li>
+                <li id={{character.attributes.vigor.substring(0,2)}}></li>
+              </ul>
+            </td>
+            <td>Vigor</td>
+          </tr>
         </tbody>
       </table>
     </div>
-    <div class="character-info">
-      <table class="character">
-        <tr><td>Name:</td><td class="pencil">{{character.name}}</td></tr>
-        <tr><td>Profession:</td><td class="pencil">{{character.profession}}</td></tr>
-        <tr><td>Setting:</td><td class="pencil">{{character.setting}}</td></tr>
-        <tr><td>Quote:</td><td class="pencil">{{character.quote}}</td></tr>
+    <div class="character-skills">
+      <table class="skills">
+        <thead>
+          <th colspan="4">Skills</th>
+        </thead>
+        <tbody>
+          <tr ng-repeat="skill in character.skills">
+            <td class="dicecell">
+              <ul id="dicelist">
+                <li id="dice"></li>
+                <li id={{skill.rank.substring(0,2)}}></li>
+              </ul>
+            </td>
+            <td>{{skill.name}}</td>
+          </tr>
+        </tbody>
       </table>
     </div>
-    <table class="result-table">
-      <thead>
-        <tr><th colspan="5">Savage Worlds Character</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Round</td> <td>Grand Prix</td> <td>Team</td> <td>Grid</td> <td>Race</td>
-        </tr>
-        <tr ng-repeat="race in races">
-          <td>{{race.round}}</td>
-          <td>{{race.raceName}}</td>
-          <td>{{race.Results[0].Constructor.name}}</td>
-          <td>{{race.Results[0].grid}}</td>
-          <td>{{race.Results[0].position}}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="character-hindrances">
+      <table class="hindrances">
+        <thead>
+          <tr><th>Hindrances:</th></tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="hindrance in character.hindrances">
+            <td>{{hindrance.name}}</td>
+            <td>{{hindrance.severity}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="character-edges">
+      <table class="edges">
+        <thead>
+          <tr>
+            <th>Edges:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="edge in character.edges">
+            <td>{{edge.name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-
 </section>

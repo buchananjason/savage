@@ -139,6 +139,11 @@ td.dicecell {
     background: url('../img/dice_sprites.gif') -164px -82px;
 }
 
+div.character-info {
+    float: right;
+    clear: left;
+}
+
 table.character tbody td.pencil {
     font-family: cursive;
 }
