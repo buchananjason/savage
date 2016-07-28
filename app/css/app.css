@@ -1,13 +1,22 @@
 table {
-    border: 1px solid black;
+    border: 0px solid black;
 }
 
 div.main-content {
     background: url('../img/sheet.gif');
 }
 
+div.logo {
+    background: url('../img/red_banner.gif');
+}
+
+div.character-derived-attributes {
+    float: right;
+}
+
 table.derived-attributes {
     text-align: center;
+    padding: 18px;
 }
 
 table.derived-attributes td {
@@ -18,6 +27,7 @@ table.derived-attributes tbody td {
     border: 1px solid black;
     border-radius: 12px;
     font-family: cursive;
+    background-color: white;
 }
 
 table.attributes th {
